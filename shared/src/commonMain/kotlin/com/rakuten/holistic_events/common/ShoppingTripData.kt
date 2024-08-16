@@ -16,12 +16,13 @@ interface ShoppingTripData {
     val trackingTicket: String
     val store: Store
 }
+
 @Serializable
 data class Store(
-    @SerialName("name")
-    val name: String?,
-
     @SerialName("id")
     val id: Long,
+
+    @SerialName("name")
+    val name: String?,
 )
 

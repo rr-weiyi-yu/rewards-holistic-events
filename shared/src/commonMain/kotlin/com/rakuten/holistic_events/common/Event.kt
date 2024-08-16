@@ -2,6 +2,7 @@ package com.rakuten.holistic_events.common
 
 import com.rakuten.holistic_events.randomUUID
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.Transient
 
 /**
  * Base definition of a Event
@@ -11,14 +12,14 @@ import kotlinx.serialization.Serializable
  * In order to expose a field, add following annotations to any field:
  *  [Expose] -> Without this annotation, a field will be ignored
  *  [SerializedName] -> Without this annotation, json keys will get obfuscated leading to invalid data sent to server
- *  
+ *
  * @author Guilherme Pivoto on August 09, 2023
  * Copyright (C) 2023 Ebates. All rights reserved.
  */
 @Serializable
 abstract class Event(
-    val eventType: String,
-    val schemaId: Long
+    @Transient val eventType: String = "",
+    @Transient val schemaId: Long = -1,
 ) {
     /**
      * Unique id for the event (UUID format)

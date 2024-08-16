@@ -28,8 +28,8 @@ data class CurrencyAmount(
     val currency: String,
 )
 
-fun Int?.toCurrencyAmount(precision: Int, currency: String) = CurrencyAmount(
-    amount = this?.toLong() ?: -1,
+fun Int.toCurrencyAmount(precision: Int, currency: String) = CurrencyAmount(
+    amount = this.toLong(),
     precision = precision,
     currency = currency,
 )

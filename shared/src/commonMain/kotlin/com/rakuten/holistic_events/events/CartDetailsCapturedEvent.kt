@@ -1,14 +1,11 @@
-package com.rakuten.holistic_events
+package com.rakuten.holistic_events.events
 
-import com.rakuten.holistic_events.common.CurrencyAmount
-import com.rakuten.holistic_events.common.KmpEvent
-import com.rakuten.holistic_events.common.ShoppingTripData
-import com.rakuten.holistic_events.common.Store
+import com.rakuten.holistic_events.models.CartLineItem
+import com.rakuten.holistic_events.models.CurrencyAmount
+import com.rakuten.holistic_events.models.ShoppingTripData
+import com.rakuten.holistic_events.models.Store
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-
-private const val EVENT_NAME = "Cart Details Captured"
-private const val CART_DETAILS_CAPTURED_SCHEMA_ID = 907L
 
 /**
  * @author William Yu on August 12, 2024
@@ -16,10 +13,6 @@ private const val CART_DETAILS_CAPTURED_SCHEMA_ID = 907L
  */
 @Serializable
 data class CartDetailsCapturedEvent(
-    override val eventType: String = EVENT_NAME,
-
-    override val schemaId: Long = CART_DETAILS_CAPTURED_SCHEMA_ID,
-
     @SerialName("tracking_ticket")
     override val trackingTicket: String,
 
@@ -34,6 +27,6 @@ data class CartDetailsCapturedEvent(
 
     @SerialName("total_qty")
     val totalQty: Int? = items?.size,
-) : KmpEvent(), ShoppingTripData {
+) : Event("Cart Details Captured", 907L), ShoppingTripData {
     override fun isEmpty(): Boolean = false // CartDetailsCapturedEvent is valid if it has a cartTotal and cartTotal is not nullable
 }

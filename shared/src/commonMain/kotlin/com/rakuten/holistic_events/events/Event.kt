@@ -1,8 +1,7 @@
-package com.rakuten.holistic_events.common
+package com.rakuten.holistic_events.events
 
 import com.rakuten.holistic_events.randomUUID
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.Transient
 
 /**
  * Base definition of a Event
@@ -17,9 +16,9 @@ import kotlinx.serialization.Transient
  * Copyright (C) 2023 Ebates. All rights reserved.
  */
 @Serializable
-abstract class Event(
-    @Transient val eventType: String = "",
-    @Transient val schemaId: Long = -1,
+sealed class Event(
+    val eventType: String,
+    val schemaId: Long,
 ) {
     /**
      * Unique id for the event (UUID format)

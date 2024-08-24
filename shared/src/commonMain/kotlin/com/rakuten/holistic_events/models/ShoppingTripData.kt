@@ -1,4 +1,4 @@
-package com.rakuten.holistic_events.common
+package com.rakuten.holistic_events.models
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

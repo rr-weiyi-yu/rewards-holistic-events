@@ -33,7 +33,7 @@ jobs:
       - name: Fetch schema_versions.json
         run: |      
           ls -R
-          cp ./schema_versions.json .
+          cp ./schema_versions.json HolisticEvents/shared/src/commonMain/resources/schema_versions/schema_versions.json
 
       - name: Generate SchemaVersions
         run: ./gradlew generateSchemaVersions

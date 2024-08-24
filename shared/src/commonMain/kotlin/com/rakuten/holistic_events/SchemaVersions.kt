@@ -47,5 +47,5 @@ object SchemaVersions {
     const val TestNamespaceTestContractNameV2RecordName: Int = 652
     const val RadiantTileEventsV1TileEvents: Int = 670
     const val RadiantTopicEventsV1TopicEvents: Int = 671
-    const val TestNamespace1TestContractNameV2RecordName3: Int = 335
+    const val TestNamespace1TestContractNameV2RecordName3: Int = 900
 }

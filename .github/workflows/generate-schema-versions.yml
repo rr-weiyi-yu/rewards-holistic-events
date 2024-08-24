@@ -25,7 +25,7 @@ jobs:
 
       - name: Fetch schema_versions.json
         run: |
-          git clone https://github.com/rr-weiyi-yu/Mock-Schema-Registrar.git
+          git clone git@github.com:rr-weiyi-yu/Mock-Schema-Registrar.git
           cp Mock-Schema-Registrar/schema_versions.json .
 
       # Runs a single command using the runners shell

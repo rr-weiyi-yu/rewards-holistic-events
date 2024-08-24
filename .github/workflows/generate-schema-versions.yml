@@ -27,6 +27,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: rr-weiyi-yu/Mock-Schema-Registrar
+          token: ${{ secrets.MySecret }}
         
           
       - name: Fetch schema_versions.json

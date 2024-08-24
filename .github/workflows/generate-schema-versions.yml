@@ -31,7 +31,8 @@ jobs:
         
           
       - name: Fetch schema_versions.json
-        run: |        
+        run: |      
+          ls -R
           cp ./schema_versions.json .
 
       - name: Generate SchemaVersions

@@ -32,7 +32,7 @@ jobs:
           
       - name: Fetch schema_versions.json
         run: |        
-          cp Mock-Schema-Registrar/schema_versions.json .
+          cp ./schema_versions.json .
 
       - name: Generate SchemaVersions
         run: ./gradlew generateSchemaVersions

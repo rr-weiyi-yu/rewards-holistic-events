@@ -23,11 +23,18 @@ jobs:
       - name: Checkout Holistic Event Repo
         uses: actions/checkout@v4
 
+      - name: Checkout Mock Schema Registrar
+        uses: actions/checkout@v4
+        with:
+          repository: rr-weiyi-yu/Mock-Schema-Registrar
+        
+          
       - name: Fetch schema_versions.json
-        run: |
-          git clone git@github.com:rr-weiyi-yu/Mock-Schema-Registrar.git
+        run: |        
           cp Mock-Schema-Registrar/schema_versions.json .
 
-      # Runs a single command using the runners shell
       - name: Generate SchemaVersions
         run: ./gradlew generateSchemaVersions
+
+      - name: List files (for verification)
+        run: ls -R      

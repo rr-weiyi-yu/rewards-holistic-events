@@ -22,7 +22,7 @@ tasks.register("generateSchemaVersions") {
             appendLine("object SchemaVersions {")
             jsonData.entries.forEach { (key, value) ->
                 val formattedKey = formatKey(key)
-                appendLine("    const val $formattedKey: Int = $value")
+                appendLine("    const val $formattedKey: Long = ${value}L")
             }
             appendLine("}")
         }

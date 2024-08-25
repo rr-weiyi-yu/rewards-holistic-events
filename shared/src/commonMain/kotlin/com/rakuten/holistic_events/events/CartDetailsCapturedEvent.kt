@@ -1,5 +1,6 @@
 package com.rakuten.holistic_events.events
 
+import com.rakuten.holistic_events.SchemaVersions
 import com.rakuten.holistic_events.models.CartLineItem
 import com.rakuten.holistic_events.models.CurrencyAmount
 import com.rakuten.holistic_events.models.ShoppingTripData
@@ -27,6 +28,6 @@ data class CartDetailsCapturedEvent(
 
     @SerialName("total_qty")
     val totalQty: Int? = items?.size,
-) : Event("Cart Details Captured", 907L), ShoppingTripData {
+) : Event("Cart Details Captured", SchemaVersions.CartscraperCartDetailsV1CartDetailsCaptured), ShoppingTripData {
     override fun isEmpty(): Boolean = false // CartDetailsCapturedEvent is valid if it has a cartTotal and cartTotal is not nullable
 }

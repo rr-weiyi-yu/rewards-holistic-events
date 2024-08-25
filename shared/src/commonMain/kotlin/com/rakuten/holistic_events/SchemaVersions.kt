@@ -1,30 +1,30 @@
 package com.rakuten.holistic_events
 
 object SchemaVersions {
-    const val SearchFeedSearchV1SearchBarClicked: Int = 716
-    const val ShoppingMerchantTripsV1MerchantTripStarted: Int = 793
-    const val ExtensionHoverEventsV1HoverDismissed: Int = 750
-    const val SearchFeedSearchV1SearchResultsReturned: Int = 715
-    const val SearchFeedSearchV1SearchResultsViewed: Int = 717
-    const val UseracquisitionTrafficattributionSurfaceVisitedAttributionV3SurfaceVisitedAttribution: Int = 597
-    const val ExtensionHoverEventsV1HoverViewed: Int = 749
-    const val SearchRecentSearchesV1RecentSearchesViewed: Int = 641
-    const val ApplicationLifecycleApplicationInstalledV1ApplicationInstalled: Int = 619
-    const val UseracquisitionAuthpayloadReferralTcbVisitedV2ReferralTcbVisitedData: Int = 291
-    const val CartscraperCartDetailsV1CartDetailsCaptured: Int = 839
-    const val ShoppingShoppingTripsV1ShoppingTripStarted: Int = 771
-    const val SearchFeedSearchV1SearchInitiated: Int = 760
-    const val SearchRecentSearchesV1RecentSearchClicked: Int = 639
-    const val GiftcardsGiftCardOrderProcessedV1GiftCardOrderProcessed: Int = 772
-    const val MembersubscriptionNotificationV1NotificationEvent: Int = 738
-    const val SearchFeedSearchV1SearchResultClicked: Int = 718
-    const val SearchRecentSearchesV1RecentSearchCleared: Int = 640
-    const val ProductwatchsystemProductDetailsV2ProductPriceChange: Int = 476
-    const val ApplicationLifecycleApplicationUninstalledV1ApplicationUninstalled: Int = 657
-    const val UseracquisitionSurfaceVisitedV3SurfaceVisited: Int = 584
-    const val TestNamespaceTestContractNameV2RecordName3: Int = 465
-    const val RadiantFeedEventsV1FeedEvents: Int = 665
-    const val RadiantTileEventsV1TileEvents: Int = 670
-    const val RadiantTopicEventsV1TopicEvents: Int = 671
-    const val TestNamespace1TestContractNameV2RecordName3: Int = 335
+    const val SearchFeedSearchV1SearchBarClicked: Long = 716L
+    const val ShoppingMerchantTripsV1MerchantTripStarted: Long = 793L
+    const val ExtensionHoverEventsV1HoverDismissed: Long = 750L
+    const val SearchFeedSearchV1SearchResultsReturned: Long = 715L
+    const val SearchFeedSearchV1SearchResultsViewed: Long = 717L
+    const val UseracquisitionTrafficattributionSurfaceVisitedAttributionV3SurfaceVisitedAttribution: Long = 597L
+    const val ExtensionHoverEventsV1HoverViewed: Long = 749L
+    const val SearchRecentSearchesV1RecentSearchesViewed: Long = 641L
+    const val ApplicationLifecycleApplicationInstalledV1ApplicationInstalled: Long = 619L
+    const val UseracquisitionAuthpayloadReferralTcbVisitedV2ReferralTcbVisitedData: Long = 291L
+    const val CartscraperCartDetailsV1CartDetailsCaptured: Long = 839L
+    const val ShoppingShoppingTripsV1ShoppingTripStarted: Long = 771L
+    const val SearchFeedSearchV1SearchInitiated: Long = 760L
+    const val SearchRecentSearchesV1RecentSearchClicked: Long = 639L
+    const val GiftcardsGiftCardOrderProcessedV1GiftCardOrderProcessed: Long = 772L
+    const val MembersubscriptionNotificationV1NotificationEvent: Long = 738L
+    const val SearchFeedSearchV1SearchResultClicked: Long = 718L
+    const val SearchRecentSearchesV1RecentSearchCleared: Long = 640L
+    const val ProductwatchsystemProductDetailsV2ProductPriceChange: Long = 476L
+    const val ApplicationLifecycleApplicationUninstalledV1ApplicationUninstalled: Long = 657L
+    const val UseracquisitionSurfaceVisitedV3SurfaceVisited: Long = 584L
+    const val TestNamespaceTestContractNameV2RecordName3: Long = 465L
+    const val RadiantFeedEventsV1FeedEvents: Long = 665L
+    const val RadiantTileEventsV1TileEvents: Long = 670L
+    const val RadiantTopicEventsV1TopicEvents: Long = 671L
+    const val TestNamespace1TestContractNameV2RecordName3: Long = 335L
 }

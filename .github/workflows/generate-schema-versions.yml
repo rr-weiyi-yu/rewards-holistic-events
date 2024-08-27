@@ -22,6 +22,22 @@ jobs:
           token: ${{ secrets.MySecret }}
           path: Mock-Schema-Registrar
 
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'  # or whichever version you're using
+          distribution: 'adopt'
+
+      - name: Cache Gradle packages
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
       - name: Copy schema_versions.json
         run: |
           cp Mock-Schema-Registrar/schema_versions.json rewards-holistic-events/shared/src/commonMain/resources/schema_versions/schema_versions.json

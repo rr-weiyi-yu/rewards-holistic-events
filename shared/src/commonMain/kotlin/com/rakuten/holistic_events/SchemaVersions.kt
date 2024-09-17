@@ -11,7 +11,7 @@ object SchemaVersions {
     const val SearchRecentSearchesV1RecentSearchesViewed: Long = 641L
     const val ApplicationLifecycleApplicationInstalledV1ApplicationInstalled: Long = 619L
     const val UseracquisitionAuthpayloadReferralTcbVisitedV2ReferralTcbVisitedData: Long = 291L
-    const val CartscraperCartDetailsV1CartDetailsCaptured: Long = 839L
+    const val CartscraperCartDetailsV1CartDetailsCaptured: Long = 990L
     const val ShoppingShoppingTripsV1ShoppingTripStarted: Long = 771L
     const val SearchFeedSearchV1SearchInitiated: Long = 760L
     const val SearchRecentSearchesV1RecentSearchClicked: Long = 639L

@@ -9,7 +9,7 @@ plugins {
 
 tasks.register("generateSchemaVersions") {
     doLast {
-        val jsonFile = file("shared/src/commonMain/resources/schema_versions/schema_versions.json")
+        val jsonFile = file("shared/src/commonMain/schema_versions.json")
         val jsonSlurper = JsonSlurper()
         val jsonData = jsonSlurper.parse(jsonFile) as Map<String, Int>
 

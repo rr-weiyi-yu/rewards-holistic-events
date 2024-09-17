@@ -40,7 +40,7 @@ jobs:
 
       - name: Copy schema_versions.json
         run: |
-          cp Mock-Schema-Registrar/schema_versions.json rewards-holistic-events/shared/src/commonMain/resources/schema_versions/schema_versions.json
+          cp Mock-Schema-Registrar/schema_versions.json rewards-holistic-events/shared/src/commonMain/schema_versions.json
           if [ $? -eq 0 ]; then
             echo "File copied successfully"
           else
@@ -52,7 +52,7 @@ jobs:
         working-directory: rewards-holistic-events
         run: |
           ./gradlew generateSchemaVersions
-          rm shared/src/commonMain/resources/schema_versions/schema_versions.json
+          rm shared/src/commonMain/schema_versions.json
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6

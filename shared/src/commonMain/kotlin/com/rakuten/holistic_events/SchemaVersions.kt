@@ -47,5 +47,5 @@ object SchemaVersions {
     const val TestNamespaceTestContractNameV2RecordName: Long = 652L
     const val RadiantTileEventsV1TileEvents: Long = 670L
     const val RadiantTopicEventsV1TopicEvents: Long = 671L
-    const val TestNamespace1TestContractNameV2RecordName3: Long = 991L
+    const val TestNamespace1TestContractNameV2RecordName3: Long = 995L
 }
